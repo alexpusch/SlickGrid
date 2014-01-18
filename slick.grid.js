@@ -2664,11 +2664,11 @@ if (typeof Slick === "undefined") {
     
     getScrollRear = getScrollLeft;
     
-    function setScrollLeft(elm) {
+    function setScrollLeft(elm, val) {
       elm.scrollLeft = val;
     }
     
-    function setScrollRight(elm) {
+    function setScrollRight(elm, val) {
       var $elm = $(elm);
       if ($elm.hasClass("slick-header")) {
       	var hWidth = $elm.children(".slick-header-columns").width();
